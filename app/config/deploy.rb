@@ -7,6 +7,8 @@ set :repository,  "https://github.com/Rorominouche/test2.git"
 set :scm,         :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `subversion`, `mercurial`, `perforce`, or `none`
 
+set   :deploy_via,    :copy
+
 set :model_manager, "doctrine"
 # Or: `propel`
 
@@ -17,3 +19,6 @@ set  :keep_releases,  3
 
 # Be more verbose by uncommenting the following line
  logger.level = Logger::MAX_LEVEL
+
+set   :use_sudo,      false
+set   :keep_releases, 3
